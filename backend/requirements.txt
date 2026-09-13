@@ -45,3 +45,4 @@ uvicorn==0.30.6
 watchfiles==1.2.0
 websockets==17.1
 wrapt==2.4.1
+groq==1.7.0
