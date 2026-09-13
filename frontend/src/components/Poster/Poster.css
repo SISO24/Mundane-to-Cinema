@@ -18,7 +18,7 @@
 
 .poster {
   position: relative;
-  width: 420px;
+  max-width: 420px;
   aspect-ratio: 2 / 3;
   border-radius: 6px;
   overflow: hidden;
@@ -302,4 +302,32 @@
 
 .download-btn:hover {
   background: rgba(255, 255, 255, 0.08);
+}
+
+/* ---- MOBILE VIEW FIXES ONLY ---- */
+@media (max-width: 480px) {
+  .poster-content {
+    padding: 1rem 1.1rem 1.2rem;
+  }
+
+  .poster-title-block {
+    margin-top: -0.5rem; /* Prevents title from slamming over tagline */
+  }
+
+  .poster-title {
+    font-size: 2.1rem; /* Fits multi-line titles cleanly */
+    line-height: 1.05;
+    margin-bottom: 0.4rem;
+  }
+
+  .poster-tagline {
+    font-size: 0.85rem;
+    line-height: 1.35;
+  }
+
+  .poster-synopsis {
+    font-size: 0.78rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
 }
