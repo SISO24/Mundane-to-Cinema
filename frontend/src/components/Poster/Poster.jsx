@@ -13,7 +13,6 @@ export default function Poster({ data, watermark = "" }) {
   const posterRef = useRef(null);
   const theme = GENRE_THEMES[data.genre] || GENRE_THEMES.Drama;
 
-
   const network = useMemo(() => pickRandomNetwork(), [data]);
   const episodeTag = useMemo(() => pickEpisodeTag(), [data]);
   const artVariant = useMemo(() => Math.floor(Math.random() * 2), [data]);
@@ -89,7 +88,7 @@ export default function Poster({ data, watermark = "" }) {
                 <span className="critic"> — {data.critic_name}</span>
               </p>
             </div>
-            <span className="poster-watermark">{watermark}</span>
+            {/* <span className="poster-watermark">{watermark}</span> */}
           </div>
         </div>
       </div>
