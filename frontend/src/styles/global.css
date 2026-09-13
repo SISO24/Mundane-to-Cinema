@@ -1,0 +1,272 @@
+/* * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0a0a0a;
+  background-image: radial-gradient(
+    circle at 50% 0%,
+    rgba(255, 255, 255, 0.04),
+    transparent 60%
+  );
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 1rem 3rem;
+  max-width: 600px;
+  width: 100%;
+}
+
+.app h1 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  letter-spacing: 0.5px;
+  margin: 0 0 0.5rem;
+  text-align: center;
+}
+
+.subtitle {
+  color: #999;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-size: 0.95rem;
+  max-width: 380px;
+}
+
+.error {
+  color: #ff6b6b;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+} */
+
+/*Below is second css -working*/
+/* * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #000;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+} */
+
+/* .page-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.page-backdrop-grid {
+  position: absolute;
+  inset: -15%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  transform: rotate(-8deg) scale(1.25);
+  opacity: 0.9;
+}
+
+.page-backdrop-tile {
+  aspect-ratio: 2 / 3;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12%;
+}
+
+.page-backdrop-scrim {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at 50% 20%,
+    rgba(0, 0, 0, 0.55) 0%,
+    rgba(0, 0, 0, 0.72) 55%,
+    rgba(0, 0, 0, 0.88) 100%
+  );
+}
+
+.app {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 1rem 3rem;
+  max-width: 600px;
+  width: 100%;
+}
+
+.app h1 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  letter-spacing: 0.5px;
+  margin: 0 0 0.5rem;
+  text-align: center;
+}
+
+.subtitle {
+  color: #999;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-size: 0.95rem;
+  max-width: 380px;
+}
+
+.error {
+  color: #ff6b6b;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+} */
+
+/* Third updated below*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #000;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  justify-content: space-evenly;
+  min-height: 100vh;
+}
+
+/* ---- Netflix-style tilted poster mosaic, using our own generated art ---- */
+.page-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.page-backdrop-grid {
+  position: absolute;
+  inset: -15%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  transform: rotate(-8deg) scale(1.25);
+  opacity: 0.9;
+}
+
+.page-backdrop-tile {
+  aspect-ratio: 2 / 3;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12%;
+}
+
+.page-backdrop-scrim {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at 50% 20%,
+    rgba(0, 0, 0, 0.55) 0%,
+    rgba(0, 0, 0, 0.72) 55%,
+    rgba(0, 0, 0, 0.88) 100%
+  );
+}
+
+/* ---- MOBILE (default): identical to before — single centered column,
+   title/form/poster stacked top to bottom. Nothing changes here. ---- */
+.app {
+  position: relative;
+  display: flex;
+  max-width: 600px;
+  margin-top: -2rem;
+  padding: 0px;
+  width: 100%;
+  z-index: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-col,
+.right-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.app h1 {
+  font-family: "Anton", sans-serif;
+  font-weight: 500;
+  font-size: 2.4rem;
+  letter-spacing: 0.5px;
+  margin: 0 0.5rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.subtitle {
+  color: #999;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-size: 0.95rem;
+  max-width: 380px;
+}
+
+.error {
+  color: #ff6b6b;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+/* ---- DESKTOP ONLY: title/form move to the left-middle, poster appears
+   at the right end once generated. Mobile is completely untouched above. ---- */
+@media (min-width: 900px) {
+  .app {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 1400px;
+    width: 100%;
+    gap: 5rem;
+    padding: 2rem 5vw;
+  }
+
+  .left-col {
+    align-items: center;
+    width: auto;
+    max-width: 460px;
+    flex-shrink: 0;
+  }
+
+  .right-col {
+    flex: 1;
+    width: auto;
+    align-items: flex-end;
+    justify-content: center;
+  }
+}
